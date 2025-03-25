@@ -1,0 +1,21 @@
+class Dog:
+    def speak(self):
+        return "Woof!"
+
+class Cat:
+    def speak(self):
+        return "Meow!"
+
+class AnimalFactory:
+    @staticmethod
+    def create_animal(animal_type):
+        if animal_type.lower() == "dog":
+            return Dog()
+        elif animal_type.lower() == "cat":
+            return Cat()
+        else:
+            raise ValueError("Unknown animal type")
+
+# Usage of the Factory
+animal = AnimalFactory.create_animal("dog")
+print(animal.speak())  # Output: Woof!
