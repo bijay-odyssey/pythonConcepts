@@ -1,0 +1,10 @@
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print(f"{self.name} makes a sound")
+
+# Creating an object and using it
+dog = Animal("Buddy")
+dog.speak()  # Output: Buddy makes a sound
