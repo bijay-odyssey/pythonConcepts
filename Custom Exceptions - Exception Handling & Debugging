@@ -1,0 +1,15 @@
+class NegativeNumberError(Exception):
+    def __init__(self, message="Negative numbers are not allowed"):
+        self.message = message
+        super().__init__(self.message)
+
+def check_positive(number):
+    if number < 0:
+        raise NegativeNumberError()
+    else:
+        print("Number is positive")
+
+try:
+    check_positive(-1)
+except NegativeNumberError as e:
+    print(e)  # Output: Negative numbers are not allowed
