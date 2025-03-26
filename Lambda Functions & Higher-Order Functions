@@ -1,0 +1,8 @@
+# Lambda function for squaring a number
+square = lambda x: x * x
+print(square(5))  # Output: 25
+
+# Higher-order function example using map
+numbers = [1, 2, 3, 4]
+squares = list(map(lambda x: x * x, numbers))
+print(squares)  # Output: [1, 4, 9, 16]
