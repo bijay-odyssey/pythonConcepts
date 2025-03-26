@@ -1,0 +1,10 @@
+import pdb
+
+def faulty_function(x):
+    result = x + 10
+    pdb.set_trace()  # Execution will pause here to allow debugging
+    result *= 2
+    return result
+
+# Uncomment the next line to run and debug interactively
+# faulty_function(5)
