@@ -1,0 +1,12 @@
+# Save this as test_math.py
+def add(a, b):
+    return a + b
+
+def test_add():
+    assert add(2, 3) == 5
+    assert add(2, 2) != 5
+
+
+# Run the tests using the command
+
+ pytest test_math.py
